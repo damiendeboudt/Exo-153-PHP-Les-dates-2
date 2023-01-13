@@ -34,6 +34,10 @@ echo "<br><br>";
 
 
 ##Exercice 5 Afficher le nombre de jours qui séparent la date du jour avec le 16 mai 2016.
+$dateTime = new DateTime("now");
+$dateTimeAfter = new DateTime("2016-5-16");
+$interval = $dateTime->diff($dateTimeAfter);
+echo $interval->format("%d");
 
 ##Exercice 6 Afficher le nombre de jours dans le mois de février de l'année 2016.
 
